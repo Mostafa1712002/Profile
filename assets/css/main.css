@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Mada:wght@400;500;600;700");
+
+
+.home {
+  font-family: "Mada", sans-serif;
+  min-height: 91vh !important;
+
+}
+
+.home .intro {
+  text-align: center;
+}
+
+.home .intro h2 {
+  font-weight: bold;
+}
+
+.home .intro h2 .wavingHand {
+  width: 40px;
+}
+
+.home .intro .intro-info {
+  width: 60%;
+  margin: auto;
+}
+
+.home .intro .intro-info p {
+  font-size: 16px;
+}
+
+.home .intro .intro-info .contactsList {
+  list-style: none;
+}
+
+.home .intro .intro-info .contactsList li {
+  margin: 4px;
+}
+
+.home .intro .intro-info .contactsList i {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.8);
+  transition: all 0.2s ease-in-out;
+}
+
+.home .intro .intro-info .contactsList i:hover {
+  color: #111111;
+}
+
+.home .portfolio h2 {
+  font-size: 36px;
+}
+
+.home .portfolio .cardContainer {
+  padding: 10px;
+}
+
+.home .portfolio .cardContainer .card {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  height: 255px;
+  color: black;
+  text-decoration: none;
+}
+
+.home .portfolio .cardContainer .card .card-img-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.home .portfolio .cardContainer .card .card-img-top img {
+  width: 80px;
+  height: 80px;
+  transition: all 0.25s ease-in-out;
+}
+
+.home .portfolio .cardContainer .card .card-body .card-title {
+  font-weight: 700;
+}
+
+.home .portfolio .cardContainer .card .card-body .card-text {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.home .portfolio .cardContainer .card::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(147, 134, 179, 0.2);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.home .portfolio .cardContainer .card:hover {
+  transform: scale(1.01);
+}
+
+.home .portfolio .cardContainer .card:hover::after {
+  top: 0;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .home .intro .intro-info {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .home .intro .intro-info {
+    width: 95%;
+  }
+}
+
+.about {
+  min-height: 85vh;
+  font-family: "Mada", sans-serif;
+}
+
+.about .quote {
+  width: 75%;
+  text-align: center;
+}
+
+.about .quote h2 .easier {
+  color: #01018a;
+}
+
+.about .aboutInfo .contacts {
+  padding-left: 50px;
+}
+
+.about .aboutInfo .contacts .contactsList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.about .aboutInfo .contacts .contactsList .bottomList {
+  list-style: none;
+}
+
+.about .aboutInfo .contacts .contactsList .bottomList .cv {
+  width: fit-content;
+}
+
+.about .aboutInfo .contacts .contactsList .bottomList .cv .btn {
+  background-color: #3182CE;
+  color: #fff !important;
+}
+
+.about .aboutInfo .contacts .contactsList .bottomList .cv .btn:hover {
+  background-color: #2C5282;
+}
+
+.about .aboutInfo .contacts .contactsList li {
+  font-size: 25px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.about .aboutInfo .contacts .contactsList li a {
+  display: flex;
+  color: #444343;
+  text-decoration: none;
+}
+
+.about .aboutInfo .contacts .contactsList li a span {
+  font-size: 16px;
+}
+
+.about .aboutInfo .contacts .contactsList li a:hover {
+  color: #000;
+}
+
+.about .SiteInfo div .ref {
+  color: #5e5d5d;
+  font-size: 14px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 765px) {
+  .about .quote {
+    width: 98%;
+    padding-top: 5px !important;
+  }
+
+  .about .aboutInfo .contacts {
+    padding-left: 12px !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.footer {
+  background-color: #171717;
+  color: #fff;
+}
+
+.contactsList {
+  list-style: none;
+}
+
+.contactsList li {
+  margin-right: 8px;
+}
+
+.contactsList i {
+  font-size: 23px;
+  color: #eaeaea;
+  transition: all 0.2s ease-in-out;
+}
+
+.contactsList i:hover {
+  color: #a14857;
+}
+
+.credits {
+  font-size: 15px;
+  color: #bbbbbb;
+  padding-bottom: 5px;
+}
+
+.navbar {
+  background-color: #171717;
+  font-family: "Mada", sans-serif;
+  font-weight: 500;
+}
+
+/* .cardContainer img {
+  width: 351px;
+  height: 300px;
+} */
